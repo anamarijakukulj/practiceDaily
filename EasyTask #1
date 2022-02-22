@@ -1,0 +1,15 @@
+// Given a list of numbers and a number K, return whether any two numbers from the list add up to K.
+//ex. [10, 15, 3, 7], k=17 -> return true; 10+7=17
+const arr = [];  //list of numbers
+const k = {};  //desired end result
+
+function findPair (k, arr) {
+  for (i = 0, i < arr.lenght-1, i++) {
+    for (j = i+1, j < arr.length, j++) {
+      if (i + j === k) {
+        return true;
+      }
+    }
+  }
+  return false;
+};
