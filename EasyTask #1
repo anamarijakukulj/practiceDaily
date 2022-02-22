@@ -4,8 +4,8 @@ const arr = [];  //list of numbers
 const k = {};  //desired end result
 
 function findPair (k, arr) {
-  for (i = 0, i < arr.lenght-1, i++) {
-    for (j = i+1, j < arr.length, j++) {
+  for (i = 0; i < arr.lenght-1; i++) {
+    for (j = i+1; j < arr.length; j++) {
       if (i + j === k) {
         return true;
       }
