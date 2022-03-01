@@ -1,0 +1,22 @@
+// given an array of integers,return a new array such 
+//that each element at index i of the new array is the product of all the numbers 
+//in the original array except the one at i 
+
+var arr = [];
+
+function productOfArray(arr){
+    var resultArray =[];
+    for(var i = 0; i < arr.length; i++){
+      product = 1;
+      for(var j = 0; j < arr.length; j++){
+         if(i !== j) {
+           product *= arr[j];
+      }
+      resultArray.push(product);
+    }
+    return resultArray;
+}
+
+// Sample data
+var array = [1,2,3,4];
+console.log(productOfArray(arr));
