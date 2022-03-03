@@ -10,9 +10,9 @@ function cons(a,b) {
 }
 
 function car(pair) {
-  return pair[0];
+  return pair[a];
 }
 
 function cdr(pair) {
-  return pair[1];
+  return pair[b];
 }
