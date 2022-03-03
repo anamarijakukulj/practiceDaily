@@ -17,6 +17,6 @@ function productOfArray(arr){
     return resultArray;
 }
 
-// Sample data
-var array = [1,2,3,4];
+
+var arr = [1,2,3,4];
 console.log(productOfArray(arr));
