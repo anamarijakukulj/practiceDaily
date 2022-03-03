@@ -1,0 +1,23 @@
+//There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. 
+//Given N, write a function that returns the number of unique ways you can climb the staircase. 
+//The order of the steps matters.
+//1 step -> 1 way (1)
+//2 steps -> 2 ways (1,1), (2)
+//3 steps -> 3 ways (1,1,1), (1,2), (2,1)
+//4 steps -> 5 ways (1,1,1,1), (2,2), (2,1,1), (1,2,1), (1,1,2) -> 3+2 ways 
+
+ways(n) = ways(n-1) + ways(n-2)
+
+const stairs = n;
+const ways = ();
+
+function findNumOfWays {
+  if ( n === 1 && n === 2) {
+      ways = n;
+      return k;
+  } else (n >= 3) {
+      ways = ways(n-1) + ways(n-2);
+      return ways;
+  }
+  return null;
+};
